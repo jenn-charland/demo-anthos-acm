@@ -1,0 +1,43 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sRequiredLabels
+metadata:
+  name: ns-must-have-owner
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Namespace"]
+    excludedNamespaces:
+      - istio-system
+      - kube-system
+      - gatekeeper-system
+      - config-management-system
+      - default
+      - portworx
+  parameters:
+    message: "All namespaces must have an `owner` label set that points to your company username xxx.arctiq.demo"
+    labels:
+      - key: owner
+        allowedRegex: "^[a-zA-Z]+.arctiq.demo$"
+---
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sRequiredLabels
+metadata:
+  name: ns-must-have-purpose
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Namespace"]
+    excludedNamespaces:
+      - istio-system
+      - kube-system
+      - gatekeeper-system
+      - config-management-system
+      - default
+      - portworx
+  parameters:
+    message: "All namespaces must have an `env` label set with a value from:  prod, dev, or stg"
+    labels:
+      - key: env
+        allowedRegex: "^(dev|stg|prod)$"
