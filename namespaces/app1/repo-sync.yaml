@@ -4,7 +4,7 @@ metadata:
   name: repo-sync
 spec:
   git:
-   repository: git@github.com:arctiqjenn/t-anthos-acm-dev.git
+   repo: git@github.com:arctiqjenn/t-anthos-acm-dev.git
    auth: ssh
    secretRef:
      name: git-creds-app1
