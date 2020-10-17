@@ -5,7 +5,7 @@ metadata:
 spec:
   git:
    repo: git@github.com:arctiqjenn/t-anthos-acm-dev.git
-   dir: "app1"
+   dir: "app2"
    auth: ssh
    secretRef:
      name: git-creds-app1
