@@ -1,0 +1,11 @@
+apiVersion: configsync.gke.io/v1alpha1
+kind: RepoSync
+metadata:
+  name: repo-sync
+spec:
+  git:
+   repository: git@github.com:arctiqjenn/t-anthos-acm-dev.git
+   auth: ssh
+   secretRef:
+     name: git-creds-app1
+  sourceFormat: unstructured
