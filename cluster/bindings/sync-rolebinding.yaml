@@ -7,7 +7,7 @@ subjects:
   name: ns-reconciler-app1
   namespace: config-management-system
 - kind: ServiceAccount
-  name: ns-reconciler-app1
+  name: ns-reconciler-app2
   namespace: config-management-system
 roleRef:
    kind: ClusterRole
