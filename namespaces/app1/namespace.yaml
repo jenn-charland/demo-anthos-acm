@@ -6,3 +6,4 @@ metadata:
   labels:
     env: prod
     owner: jenn.arctiq.demo
+    application: app1
