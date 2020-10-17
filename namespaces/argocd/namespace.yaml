@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: argocd
+  labels:
+    env: dev
+    owner: jenn.arctiq.demo
+  annotations: 
+    configmanagement.gke.io/cluster-selector: on-prem-cluster-selector
+
