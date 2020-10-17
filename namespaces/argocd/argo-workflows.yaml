@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argo-workflows
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  # Ignore differences at the specified json pointers
+  ignoreDifferences:
+  - kind: Service
+    jsonPointers:
+    - /spec/clusterIP
+  project: default
+  source:
+    repoURL: https://argoproj.github.io/argo-helm
+    chart: argo
+    targetRevision: "0.7.1"
+    helm:
+      releaseName: argo
+      parameters:
+      - name: "minio.install"
+        value: "true"
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argo
