@@ -6,6 +6,6 @@ metadata:
   annotations:
     configmanagement.gke.io/cluster-selector: infra-selector
   labels:
-    env: infra
+    env: prod
     owner: jenn.arctiq.demo
     application: management
