@@ -3,7 +3,7 @@ kind: RepoSync
 metadata:
   name: repo-sync
   annotations:
-    configmanagement.gke.io/cluster-selector: app-selector
+    configmanagement.gke.io/cluster-selector: apps-selector
 spec:
   git:
    repo: git@github.com:arctiqjenn/t-anthos-acm-dev.git
