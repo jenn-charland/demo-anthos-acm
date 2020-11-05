@@ -3,7 +3,9 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: app1
+  annotations:
+    configmanagement.gke.io/cluster-selector: infra-selector
   labels:
-    env: prod
+    env: infra
     owner: jenn.arctiq.demo
-    application: app1
+    application: management
