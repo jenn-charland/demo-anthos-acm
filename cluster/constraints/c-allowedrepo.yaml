@@ -20,3 +20,4 @@ spec:
       - redis
       - argoproj
       - docker.io/istio
+      - jmalloc
