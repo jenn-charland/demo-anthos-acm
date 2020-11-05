@@ -2,12 +2,10 @@ apiVersion: configsync.gke.io/v1alpha1
 kind: RepoSync
 metadata:
   name: repo-sync
-  annotations:
-    configmanagement.gke.io/cluster-selector: infra-selector
 spec:
   git:
    repo: git@github.com:arctiqjenn/t-anthos-acm-dev.git
-   dir: "app1"
+   dir: "app3"
    auth: ssh
    secretRef:
      name: git-creds-app1
