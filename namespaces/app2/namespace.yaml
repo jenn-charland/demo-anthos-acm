@@ -4,7 +4,7 @@ kind: Namespace
 metadata:
   name: app2
   annotations:
-    configmanagement.gke.io/cluster-selector: app-selector
+    configmanagement.gke.io/cluster-selector: apps-selector
   labels:
     env: prod
     owner: jenn.arctiq.demo
