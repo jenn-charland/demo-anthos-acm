@@ -1,6 +1,6 @@
 kind: Cluster
 apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
-  name: aws-cluster-1
+  name: gke-on-prem-cluster
   labels:
-    cluster: apps
+    environment: on-prem

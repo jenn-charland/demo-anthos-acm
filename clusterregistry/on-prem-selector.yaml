@@ -1,8 +1,8 @@
 kind: ClusterSelector
 apiVersion: configmanagement.gke.io/v1
 metadata:
-  name: infra-selector
+  name: on-prem-cluster-selector
 spec:
   selector:
     matchLabels:
-      cluster: infra
+      environment: on-prem

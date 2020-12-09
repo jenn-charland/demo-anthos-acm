@@ -1,0 +1,11 @@
+cluster_change:
+  - config-management/cluster/*
+
+namespace_change:
+  - config-management/namespaces/**/*
+
+registry_change:
+  - config-management/clusterregistry/*
+
+doc_change:
+ - ./*.md
