@@ -5,7 +5,3 @@ metadata:
   name: app1
   annotations:
     configmanagement.gke.io/cluster-selector: infra-selector
-  labels:
-    env: prod
-    owner: jenn.arctiq.demo
-    application: management
