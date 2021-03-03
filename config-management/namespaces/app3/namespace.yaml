@@ -1,9 +1,0 @@
----
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: app3
-  labels:
-    env: prod
-    owner: jenn.arctiq.demo
-    application: management
