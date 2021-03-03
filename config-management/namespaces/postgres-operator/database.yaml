@@ -3,7 +3,7 @@ kind: postgresql
 metadata:
   name: acid-minimal-cluster
 spec:
-  teamId: "custom-team-membership"
+  teamId: "acid"
   volume:
     size: 1Gi
   numberOfInstances: 2
