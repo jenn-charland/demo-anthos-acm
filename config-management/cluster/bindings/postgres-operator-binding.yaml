@@ -10,4 +10,4 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: postgres-operator
-  namespace: postgress-operator
+  namespace: postgres-operator
