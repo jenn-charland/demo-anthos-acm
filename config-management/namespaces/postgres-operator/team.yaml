@@ -10,4 +10,5 @@ spec:
   additionalTeams:
     acid: []
   additionalMembers:
-    acid: []
+    acid:
+     - "zalando"
