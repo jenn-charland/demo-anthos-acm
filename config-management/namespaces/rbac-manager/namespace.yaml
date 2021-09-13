@@ -5,4 +5,4 @@ metadata:
   name: rbac-manager
   labels:
     env: prod
-    owner: jenn.arctiq.demo
+    owner: jenn.demo

@@ -5,4 +5,4 @@ metadata:
   name: application-namespace
   labels:
     env: prod
-    owner: jenn.arctiq.demo
+    owner: jenn.demo

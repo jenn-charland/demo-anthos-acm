@@ -5,4 +5,4 @@ metadata:
   name: postgres-operator
   labels:
     env: prod
-    owner: jenn.arctiq.demo
+    owner: jenn.demo
