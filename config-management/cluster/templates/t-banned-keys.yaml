@@ -7,7 +7,7 @@ spec:
     spec:
       names:
         kind: K8sBannedConfigMapKeysV1
-        validation:
+      validation:
           openAPIV3Schema:
             properties:
               keys:
