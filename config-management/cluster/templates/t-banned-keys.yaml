@@ -1,12 +1,12 @@
 apiVersion: templates.gatekeeper.sh/v1beta1
 kind: ConstraintTemplate
 metadata:
-  name: k8sbannedconfigmapkeysv1
+  name: k8sbannedconfigmapkeys
 spec:
   crd:
     spec:
       names:
-        kind: K8sBannedConfigMapKeysV1
+        kind: K8sBannedConfigMapKeys
         validation:
           openAPIV3Schema:
             properties:
