@@ -1,12 +1,14 @@
 apiVersion: constraints.gatekeeper.sh/v1beta1
-kind: K8sBannedConfigMapKeys
+kind: K8sBannedConfigMapKeysV1
 metadata:
-  name: no-sshkeys-in-configmap
+  name: no-secrets-in-configmap
 spec:
   match:
     kinds:
-      - apiGroups: [""]
-        kinds: ["ConfigMap"]
+      - apiGroups:
+          - ''
+        kinds:
+          - ConfigMap
   parameters:
     keys:
       - private_key
