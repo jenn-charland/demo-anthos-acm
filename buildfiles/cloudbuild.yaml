@@ -17,7 +17,7 @@ steps:
   - name: 'kube'
     path: '/kube'
 - name: 'gcr.io/config-management-release/nomos:stable'
-  args: ['nomos', 'vet', '--path', '/workspace/[POLICY_DIR]']
+  args: ['nomos', 'vet', '--path', '/workspace/config-managment']
   volumes:
   - name: 'kube'
     path: '/kube'
