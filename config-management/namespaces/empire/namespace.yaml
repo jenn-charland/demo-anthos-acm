@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: application-namespace
+  name: empire
   labels:
     env: dev
     owner: jenn.demo
