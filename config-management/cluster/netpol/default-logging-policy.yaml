@@ -1,0 +1,14 @@
+apiVersion: networking.gke.io/v1alpha1
+kind: NetworkLogging
+metadata:
+  labels:
+    addonmanager.kubernetes.io/mode: EnsureExists
+  name: default
+spec:
+  cluster:
+    allow:
+      delegate: false
+      log: false
+    deny:
+      delegate: false
+      log: true

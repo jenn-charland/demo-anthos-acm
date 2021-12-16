@@ -4,5 +4,5 @@ kind: Namespace
 metadata:
   name: application-namespace
   labels:
-    env: prod
+    env: dev
     owner: jenn.demo
