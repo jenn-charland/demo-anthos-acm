@@ -7,12 +7,6 @@ spec:
     kinds:
       - apiGroups: [""]
         kinds: ["Namespace"]
-    excludedNamespaces:
-      - istio-system
-      - kube-system
-      - gatekeeper-system
-      - config-management-system
-      - default
   parameters:
     message: "All namespaces must have an `owner` label set"
     labels:
@@ -28,12 +22,6 @@ spec:
     kinds:
       - apiGroups: [""]
         kinds: ["Namespace"]
-    excludedNamespaces:
-      - istio-system
-      - kube-system
-      - gatekeeper-system
-      - config-management-system
-      - default
   parameters:
     message: "All namespaces must have an `env` label set with a value from:  prod, dev, or stg"
     labels:

@@ -7,11 +7,6 @@ spec:
     kinds:
       - apiGroups: [""]
         kinds: ["Pod"]
-    excludedNamespaces:
-      - istio-system
-      - kube-system
-      - gatekeeper-system
-      - config-management-system
   parameters:
     tags:
       - "latest"
