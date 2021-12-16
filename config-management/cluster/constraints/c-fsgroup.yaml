@@ -7,14 +7,6 @@ spec:
     kinds:
       - apiGroups: [""]
         kinds: ["Pod"]
-    excludedNamespaces:
-      - istio-system
-      - kube-system
-      - gatekeeper-system
-      - config-management-system
-      - argo
-      - argocd
-      - cnrm-system
   parameters:
     rule: "MayRunAs" #"MustRunAs" #"MayRunAs", "RunAsAny"
     ranges:
