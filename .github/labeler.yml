@@ -1,5 +1,5 @@
 cluster_change:
-  - config-management/cluster/*
+  - config-management/cluster/**/*
 
 namespace_change:
   - config-management/namespaces/**/*
