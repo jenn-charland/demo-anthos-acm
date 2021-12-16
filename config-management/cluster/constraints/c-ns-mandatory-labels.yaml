@@ -23,6 +23,7 @@ spec:
     kinds:
       - apiGroups: [""]
         kinds: ["Namespace"]
+    excludedNamespaces: [default,kubesystem]
   parameters:
     message: "All namespaces must have an `env` label set with a value from:  prod, dev, or stg"
     labels:
